@@ -7,10 +7,10 @@ on:
         description: 'IMG_URL'
         required: true
         default: ''
-      IMG_URL2:    
-        description: 'IMG_URL2'
-        required: true
-        default: ''
+      #IMG_URL2:    
+  #      description: 'IMG_URL2'
+  #      required: true
+  #      default: ''
 
 jobs:
   build:
@@ -31,7 +31,7 @@ jobs:
     - name: Download boot or recovery img
       run: |
         aria2c "${{ github.event.inputs.IMG_URL }}"
-        aria2c "${{ github.event.inputs.IMG_URL2 }}"
+   #     aria2c "${{ github.event.inputs.IMG_URL2 }}"
         ls
       
     - name: Start build
