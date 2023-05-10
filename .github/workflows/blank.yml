@@ -37,6 +37,7 @@ jobs:
     - name: Start build
       run: |
         python3 -m twrpdtgen -o dt/ *.img
+        rm boot.img boot.1.img recovery.img recovery.1.img
     - name: ZIP device tree
       run: |
         zip -r DeviceTree.zip ./dt
