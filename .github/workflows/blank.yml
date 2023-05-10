@@ -7,7 +7,6 @@ on:
         description: 'IMG_URL'
         required: true
         default: ''
-      inputs:
       IMG_URL2:    
         description: 'IMG_URL2'
         required: true
